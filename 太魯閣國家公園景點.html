@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="utf-8">   <!-- utf-8編碼，中文不會產生亂碼 -->
+    <title>太魯閣國家公園‧景點</title>  <!-- 網頁標題 -->
+    <style>
+    body {
+    font-family:"Noto Sans TC", sans-serif;/* google雲端字體 思源黑體*/
+    background-color: #fff;
+    margin: 0;
+    -webkit-text-size-adjust: 100%;
+    }
+    footer{
+    font-size:14px;
+    font-weight: 200;
+    line-height: 1em;
+    padding: 20px;
+    }
+    /* 導覽列 */
+    .navigation ul {           /* 導覽列整體設定*/
+    margin: 0;             /* 取消外距，設定為0*/
+    padding: 4px;          /* 內部距離，設定為4px*/
+    text-align: center;    /* 文字置中*/
+    }
+    .navigation ul li {        /* 按鈕個別設定*/
+    list-style-type: none; /* 取消前面的小黑點*/
+    display: inline;       /* 成一行排列*/
+    margin: 0 5px;         /* 外距設定為0.5px*/
+    font-size: 15px;       /* 字體大小15px*/
+    }
+    .navigation ul li a {      /* 超連結設定*/
+    color:#0072E3;         /* 文字顏色設定*/
+    text-decoration: none; /* 文字無底線*/
+    }
+    .navigation ul li a:hover {/* 超連結滑鼠滑過設定*/
+    color: 	#FF0000;        /* 文字顏色設定*/
+    text-decoration: underline;/* 文字有底線*/
+    }
+    /* 主要視覺圖設計 */
+    .mainvisual {
+    background-color:#ACD6FF; /* 設定底色，以防止螢幕過寬，出現漏白*/
+    }
+    .mainvisual img {    /* 主視覺圖設定*/
+    display: block;  /* 圖片元素會以區塊方式呈現*/
+    margin: 0 auto;  /* 置中對齊*/
+    max-width: 100%; /* 寬度以100%呈現，隨著螢幕尺寸縮放*/
+    height: auto;    /* 高度隨著螢幕尺寸自動縮放*/
+    }
+    /* article */
+    article {
+    font-size: 15px;        /* 文字大小*/
+    font-weight: 300;       /* 文字齣粗細設為300*/
+    line-height: 2em;       /* 行間設定為2em兩個字高*/
+    padding: 32px 16px;     /* 內距設定為上下32px 左右16px*/
+    }
+    /* #news */
+    #news{
+    padding: 30px 20px;
+    }
+    #Taroko Terrace{
+        padding: 30px 20px;
+        position: relative;
+    left: 10%;width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 0px 10px 0px 10px;
+    overflow: hidden;
+    }
+    #Qingshui Cliff{
+        padding: 30px 20px;  
+    }
+    #DaliDatong{
+        padding: 30px 20px;
+    }
+    #ChangChun Shrine{
+        padding: 30px 20px;
+    }
+    #Ningan Bridge{
+        padding: 30px 20px;
+        
+    }
+    #video{
+        text-align: center;
+        color:#4A4AFF;
+        background-color:#D2E9FF;
+    }
+    /* 設定了內容寬度的上限 */
+    .inner {
+    max-width: 800px;  /* 內容寬度上限為800px*/
+    margin: 0 auto;    /* 置中對齊*/
+    }
+    /* 表格設定 */
+    table {
+    border-collapse: collapse; /* 邊框合併為單一邊框，讓表格變得更美化*/
+    width: 100%;               /* 表格寬度設為100%，會隨著螢幕寬度縮放*/
+    }
+    th,td {
+    border-bottom: solid 1px #cccccc;/* 邊框底邊，設定為實線、1px、#cccccc灰色細邊炳框*/
+    padding: 10px;           /* 內距設為10px*/
+    text-align: left;        /* 文字靠左對齊*/
+    vertical-align: top;     /* 垂直對齊該行文字的最高位置*/
+    }
+    /* 網站標題 */
+    h1 {
+    font-size: 1em;
+    color: #0066CC;
+    text-align: center;
+    }
+    /* 標題 */
+    h2 {
+    color: #CA5D87;
+    font-size:20px;
+    font-weight: 700;
+    line-height: 1.5em;
+    text-align: center;
+    margin: 0;
+    }
+    /* 回到本頁開頭 */
+    .pagetop {
+    text-align: right;
+    margin: 1em;
+    }
+    /* 著作權資訊 */
+    .copyright {
+    border-top: solid 5px #2894FF;
+    text-align: center;
+    padding-top: 20px;
+    }
+    /* 超連結設定 */
+    a{
+    color: #004B97;
+    text-decoration: none;
+    }
+    a:hover{
+    color: #F75000;
+    text-decoration: none;
+    }
+    #g{
+        float:left;
+        margin-left:50px;
+        margin-right:50px;
+     
+    transition: transform 1s ease;
+    }
+    #g:hover,g:focus{
+        transform: scale(1.4);
+    -ms-transform: scale(1.4);
+-webkit-transform: scale(1.4);}
+    
+    
+    #r{
+        float:right;
+        margin-left:50px;
+        margin-right:50px;
+        transition: transform 1s ease;
+    } 
+    #r:hover,r:focus{
+    transform: scale(1.4);
+    -ms-transform: scale(1.4);
+-webkit-transform: scale(1.4);}
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1><img src="S__3735623.jpg" width="300" height="180"></h1>
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="#news">最新消息</a></li>
+                <li><a href="#Taroko Terrace">太魯閣台地</a></li>
+                <li><a href="#Qingshui Cliff">清水斷崖</a></li>
+                <li><a href="#DaliDatong">大禮大同</a></li>
+                <li><a href="#ChangChun Shrine">長春祠</a></li>
+                <li><a href="#Ningan Bridge">寧安橋</a></li>
+                <li><a href="#video">影片觀賞</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="mainvisual">
+            <img src="太魯閣.jpg" width="1000" height="400">
+        </div>
+
+        <article id="news">
+            <div class="inner">
+                <h2>最新消息</h2>
+                <table>
+                    <tr>
+                        <th>2021.04.20</th>
+                        <td>~道路安全~</td>
+                        <th><a href="https://www.taroko.gov.tw/zh-tw/Event/HighwayCondition">公路步道開放資訊</a></th>
+                    </tr>
+                    <tr>
+                        <th>2021.04.20</th>
+                        <td>~最近活動~</td>
+                        <th><a href="https://www.taroko.gov.tw/zh-tw/Event/ActivityList">當季活動資訊</a></th>
+                    </tr>
+                    <tr>
+                        <th>2021.04.20</th>
+                        <td>~景區舒適度~</td>
+                        <th><a href="https://www.taroko.gov.tw/zh-tw/ScenicComfort">太魯閣景區觀光舒適度服務專頁</a></th>
+                    </tr>
+                </table>
+            </div>
+        </article>
+    </main>
+    <article id="Taroko Terrace">
+        <h2>太魯閣台地</h2>
+        <p>
+            <img src="台地.jpg" width="500" height="300" id="g">
+
+            太魯閣臺地位在立霧溪出海口的北岸，立霧溪沖積扇三角洲的頂端，蘇花公路與中橫公路在此交會。</br>
+            臺地上設置了國家公園管理處行政中心、太魯閣遊客中心、國家公園警察隊及員工宿舍，是國家公園經營管理的樞紐，也是遊客要了解太魯閣國家公園的第一站。</br>
+            臺地上，除了上述的設施，還設有難易程度不同的步道，供民眾漫步或健行；遊客中心外的大草坪，像是親子的遊戲場，提供家長和孩子開闊自由的活動空間；臺地上遍植各種原生種的綠樹及豐富的生物資源，是遊客散步賞景的好去處，也是學校環境教育及戶外教學的場所。</br>
+            南段步道鄰近立霧溪，從遊客中心旁大草坪經過遊客中心後方，延伸至太魯閣警察隊為止；沿途可見到立霧溪緩緩由群山中流出，向東注入太平洋。</br>
+            北段步道則從大型車停車場至行政中心旁，緊靠山邊，穿梭在密林中，除了可享受清涼的森林浴，也可觀賞偶而出現的臺灣獼猴。</br>
+
+</article>
+    <article id="Qingshui Cliff">
+        <h2>清水斷崖</h2>
+        <p>
+        <img src="斷崖.jpg" width="500" height="300" id="r">
+      
+        清水斷崖位於清水山東側，自蘇花公路和平至崇德之間，綿延21公里 。
+        其中清水山東南大斷崖尤其險峻，絕壁臨海面長達5公里，非常壯觀。</br>
+        當行車在山壁斷崖與無垠汪海之間，好像騰雲凌空，上有巨壁千仞，下是汪洋萬頃，真是驚險無比，也感受前人拓荒築路的艱辛，眼前所見正是一篇山海與人的壯麗詩篇。</br>
+        在這裡還可以欣賞太平洋海天一色，山海對峙，以及海岸呈現多層次的藍色驚艷。</br>
+        
+        步行於舊道路，看著寧靜的山脈，俯瞰海浪拍打岩石激起的波濤，感受陣陣的海風，宛如置身於一條上不著天，下不著地的空中走廊，令人著迷。</br>
+        後來臨海舊道多數路段因屬落石頻繁危險區封閉，目前僅規劃開放匯徳景觀道路(步道)，位於匯德隧道北口休憩據點舊道路段，景觀道路開放終端臨海路段徒步區，設有｢臺灣十景—清水斷崖｣石碑及觀景臺，為絕佳清水斷崖眺景點。</br>
+        
+    </article>
+    <article id="DaliDatong">
+        <h2>大同大禮</h2>
+        <p>
+        <img src="大同大禮.jpg" width="500" height="300" id="g">
+        
+        往大禮部落的登山口，在太魯閣台地停車場公廁旁步道起點，經得卡倫步道沿路而上，有階梯 、解說牌示，到大禮步程約3小時。</br>
+        【大禮部落】</br>
+        大禮部落位於砂卡礑溪下游左岸上方台地，海拔約915公尺，舊部落名為「赫赫斯」。</br>
+        目前當地居民種植玉米、高麗菜、四季豆、青椒、箭竹及蕗蕎等農作物。</br>
+        【大同部落】</br>
+        由大禮部落，循步道可到大同部落，步程約2.5小時。</br>
+        部落位於砂卡礑溪中游左岸上方之平台，海拔高度為1128公尺，原始之部落名稱為「砂卡礑」部落，日治時期曾於此地設有駐在所，管理附近之太魯閣族部落。</br>
+        目前居民種植玉米、青椒、高麗菜、四季豆、甜柿、雪蓮等作物。</br>
+           
+    </article>
+    <article id="ChangChun Shrine">
+        <h2>長春祠</h2>
+        <p>
+        <img src="長春祠.jpg" width="500" height="300" id="r">
+        
+        自太魯閣往天祥方向，出中橫公路長春隧道西口，折轉到臺八線舊道，即可看到矗立在立霧溪谷峭崖邊階的長春祠。</br>
+        為紀念開闢中橫公路殉職人員所建，祠旁湧泉長年流水成散瀑，公路局取名為「長春飛瀑」，成為中橫公路具特殊意義的地標。</br>
+        長春祠供奉著中橫公路興建工程殉職的225位築路人靈位，唐式風格建築依地勢嵌入山壁間，清新的泉水自山壁湧出，形成一道飛瀑，如同一幅秀麗的國畫圖像。</br>
+        民國69年長春祠首次坍塌，民國76年峭壁崩坍，落石擊毀祠體及周邊建物設施，於民國85年完成重建，翌年才重新對外開放。</br>
+        祠後峭壁闢有階梯，循階而上沿途經觀音洞、太魯閣樓、鐘樓、再過一吊橋可至禪光寺，俗稱為「天堂步道」。</br>
+       
+    </article>
+    <article id="Ningan Bridge">
+        <h2> 寧安橋</h2>
+        <p>
+        <img src="寧安橋.jpg" width="500" height="300" id="g">
+        
+        由長春祠繼續前行約兩公里，可看到跨越於青山綠水中的鋼構吊橋，這就是寧安舊橋。</br>
+        長達八十二公尺，是中橫開鑿之初所建，寬度僅容一輛車通過，在當時是台灣最長的單孔橋</br>
+        朱紅的橋身，在一片綠意中顯得特別醒目。</br>
+            【不動明王廟】</br>
+            寧安橋下方岩洞有一座小廟，供奉不動明王，據傳是日治末期，日人開鑿採金道路時，從日本請來銅鑄的不動明王神像在此供奉，庇佑築路工程平安順利，但後來神像不翼而飛，民國40年台電公司重塑神像並整修廟宇。廟中有一道湧泉，清澈而沁涼。</br>
+            ※因落石擊毀廟體，本區域封閉管制。</br>
+
+            【銀帶瀑布】</br>
+            寧安橋以西不遠處，對岸山凹有一兩段式瀑布，高懸在綠水青山崖壁中，有如白鍊一般，這就是銀帶瀑布。銀帶瀑布從中橫公路就可清楚看到，但它的水量會隨著天氣不同而有所變化。</br>
+        
+    </article>
+    <article id="video">
+        <h2>影片欣賞</h2>
+        <p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fhQiVyl-FYc?si=nDSURp2GxoZQUUl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-4VA_pjkxO8?si=-KMXtGOsCNzFs3Ed" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </article>
+        <footer>
+            <div class="pagetop"><p><a href="#top">▲回到本頁開頭</a></p></div>
+                <p class="copyright"><small>&copy; Copyright 2021 本網站僅為作業之用，如有侵權敬請告知</small></p>
+                <p align="center"><a href="https://www.taroko.gov.tw/" target="_blank">資訊來源：太魯閣國家公園官網</a></p>
+</footer>
+</body>
+</html>
